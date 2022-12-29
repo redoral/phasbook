@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Deogen",
+    "speed": 1.6,
+    "huntSanity": 75,
+    "evidence": [
+      {
+        "id": 0,
+        "name": "Freezing Temps"
+      },
+      {
+        "id": 1,
+        "name": "Spirit Box"
+      },
+      {
+        "id": 2,
+        "name": "Ghost Orb"
+      }
+    ]
+  },
+  {
+    "name": "Obake",
+    "speed": 1.6,
+    "huntSanity": 75,
+    "evidence": [
+      {
+        "id": 0,
+        "name": "Freezing Temps"
+      },
+      {
+        "id": 1,
+        "name": "Spirit Box"
+      },
+      {
+        "id": 2,
+        "name": "Ghost Orb"
+      }
+    ]
+  },
+  {
+    "name": "Revenant",
+    "speed": 1.6,
+    "huntSanity": 75,
+    "evidence": [
+      {
+        "id": 0,
+        "name": "Freezing Temps"
+      },
+      {
+        "id": 1,
+        "name": "Spirit Box"
+      },
+      {
+        "id": 2,
+        "name": "Ghost Orb"
+      }
+    ]
+  },
+  {
+    "name": "Demon",
+    "speed": 1.6,
+    "huntSanity": 100,
+    "evidence": [
+      {
+        "id": 0,
+        "name": "Freezing Temps"
+      },
+      {
+        "id": 1,
+        "name": "Spirit Box"
+      },
+      {
+        "id": 2,
+        "name": "Ghost Orb"
+      }
+    ]
+  }
+]
