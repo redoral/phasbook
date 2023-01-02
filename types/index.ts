@@ -27,10 +27,10 @@ type GhostListItemProps = {
 
 type StackParamList = {
   Home: undefined;
-  GhostView: Ghost;
+  GhostScreen: Ghost;
 };
 
-type NavProps = NativeStackScreenProps<StackParamList, 'GhostView'>;
+type NavProps = NativeStackScreenProps<StackParamList, 'GhostScreen'>;
 
 export {
   Ghost,

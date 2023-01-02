@@ -6,7 +6,7 @@ import styles from '../../styles';
  * The screen that displays information about a specific ghost
  * @returns A React functional component
  */
-export const GhostView: React.FC<NavProps> = ({ route, navigation }: NavProps) => {
+export const GhostScreen: React.FC<NavProps> = ({ route, navigation }: NavProps) => {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.header}>

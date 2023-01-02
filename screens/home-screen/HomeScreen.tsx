@@ -12,7 +12,7 @@ import colors from '../../styles/colors';
  */
 export const HomeScreen: React.FC = ({ navigation }: any) => {
   const navigate = useCallback((selectedGhost: Ghost) => {
-    navigation.navigate('GhostView', selectedGhost);
+    navigation.navigate('GhostScreen', selectedGhost);
   }, []);
 
   return (

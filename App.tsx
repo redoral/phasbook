@@ -1,7 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { HomeScreen } from './screens/home-screen';
-import { GhostView } from './screens/ghost-view';
+import { GhostScreen } from './screens/ghost-screen';
 import { StackParamList } from './types';
 
 const Stack = createNativeStackNavigator<StackParamList>();
@@ -18,7 +18,7 @@ const App: React.FC = () => {
           headerShown: false
         }}>
         <Stack.Screen name='Home' component={HomeScreen} />
-        <Stack.Screen name='GhostView' component={GhostView} />
+        <Stack.Screen name='GhostScreen' component={GhostScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
