@@ -6,7 +6,7 @@ import ghostsData from '../../resources/ghosts.json';
 
 /**
  * The FlastList for all of the ghosts shown in the main screen
- * @returns a React component
+ * @returns a React functional component
  */
 export const GhostList: React.FC<GhostListProps> = ({ navigate }: GhostListProps) => {
   const renderItem = useCallback(({ item: data }: GhostRenderItem) => {

@@ -1,12 +1,12 @@
 import { TouchableOpacity, Text, View } from 'react-native';
-import styles from '../../styles';
-import { Ghost, GhostListItemProps } from '../../types';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { GhostListItemProps } from '../../types';
 import { useCallback } from 'react';
+import styles from '../../styles';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 /**
  * The ListRenderItem for the GhostList FlatList
- * @returns a React component
+ * @returns a React functional component
  */
 export const GhostListItem: React.FC<GhostListItemProps> = ({
   ghost,

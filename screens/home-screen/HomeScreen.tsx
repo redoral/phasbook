@@ -6,6 +6,10 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import styles from '../..//styles';
 import colors from '../../styles/colors';
 
+/**
+ * Main home screen for the app.
+ * @returns A React functional component
+ */
 export const HomeScreen: React.FC = ({ navigation }: any) => {
   const navigate = useCallback((selectedGhost: Ghost) => {
     navigation.navigate('GhostView', selectedGhost);

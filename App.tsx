@@ -7,8 +7,8 @@ import { StackParamList } from './types';
 const Stack = createNativeStackNavigator<StackParamList>();
 
 /**
- * The main react component for Phasbook
- * @returns a React component
+ * The root component for the entire app
+ * @returns a React functional component
  */
 const App: React.FC = () => {
   return (
