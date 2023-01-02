@@ -1,4 +1,4 @@
-import { View, StatusBar, Text } from 'react-native';
+import { View, StatusBar, Text, TextInput } from 'react-native';
 import { GhostList } from './components/ghost-list';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import styles from './styles';
@@ -17,7 +17,14 @@ const App: React.FC = () => {
           <Icon name='book-outline' size={24} />
           Phasbook
         </Text>
-        <Icon name='magnify' size={24} style={styles.headingIcon} />
+      </View>
+      <View style={styles.searchView}>
+        <Icon name='magnify' size={16} style={styles.headingIcon} />
+        <TextInput
+          style={styles.searchInput}
+          placeholder='Search...'
+          placeholderTextColor={colors.white}
+        />
       </View>
       <GhostList />
     </View>

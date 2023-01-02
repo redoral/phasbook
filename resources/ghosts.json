@@ -1,77 +1,77 @@
 [
   {
-    "name": "Deogen",
+    "name": "Spirit",
     "speed": 1.6,
-    "huntSanity": 75,
+    "huntSanity": 50,
     "evidence": [
       {
-        "id": 0,
-        "name": "Freezing Temps"
+        "id": 1,
+        "name": "EMF Level 5"
       },
       {
-        "id": 1,
+        "id": 6,
         "name": "Spirit Box"
       },
       {
-        "id": 2,
-        "name": "Ghost Orb"
+        "id": 5,
+        "name": "Ghost Writing"
       }
     ]
   },
   {
-    "name": "Obake",
+    "name": "Wraith",
     "speed": 1.6,
-    "huntSanity": 75,
+    "huntSanity": 50,
     "evidence": [
       {
-        "id": 0,
-        "name": "Freezing Temps"
+        "id": 1,
+        "name": "EMF Level 5"
       },
       {
-        "id": 1,
+        "id": 6,
         "name": "Spirit Box"
       },
       {
-        "id": 2,
-        "name": "Ghost Orb"
+        "id": 0,
+        "name": "D.O.T.S. Projector"
       }
     ]
   },
   {
-    "name": "Revenant",
+    "name": "Phantom",
     "speed": 1.6,
-    "huntSanity": 75,
+    "huntSanity": 50,
     "evidence": [
       {
-        "id": 0,
-        "name": "Freezing Temps"
-      },
-      {
-        "id": 1,
+        "id": 6,
         "name": "Spirit Box"
       },
       {
         "id": 2,
-        "name": "Ghost Orb"
+        "name": "Fingerprints"
+      },
+      {
+        "id": 0,
+        "name": "D.O.T.S. Projector"
       }
     ]
   },
   {
-    "name": "Demon",
+    "name": "Poltergeist",
     "speed": 1.6,
-    "huntSanity": 100,
+    "huntSanity": 50,
     "evidence": [
       {
-        "id": 0,
-        "name": "Freezing Temps"
-      },
-      {
-        "id": 1,
+        "id": 6,
         "name": "Spirit Box"
       },
       {
         "id": 2,
-        "name": "Ghost Orb"
+        "name": "Fingerprints"
+      },
+      {
+        "id": 5,
+        "name": "Ghost Writing"
       }
     ]
   }

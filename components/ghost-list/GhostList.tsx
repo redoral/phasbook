@@ -1,6 +1,5 @@
 import { useCallback } from 'react';
 import { FlatList } from 'react-native';
-import styles from '../../styles';
 import { GhostRenderItemI } from '../../types';
 import { GhostListItem } from '../ghost-list-item';
 import ghostsData from '../../resources/ghosts.json';
@@ -14,7 +13,7 @@ export const GhostList: React.FC = () => {
     return <GhostListItem ghost={data} />;
   }, []);
 
-  return <FlatList renderItem={renderItem} data={ghostsData} style={styles.ghostList} />;
+  return <FlatList renderItem={renderItem} data={ghostsData} />;
 };
 
 export default GhostList;

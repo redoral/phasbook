@@ -1,4 +1,4 @@
-import { StyleSheet, StatusBar } from 'react-native';
+import { StyleSheet } from 'react-native';
 import colors from './colors';
 
 const styles = StyleSheet.create({
@@ -12,24 +12,30 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     padding: 25
   },
-  headingIcon: {
-    color: colors.white
-  },
   headingText: {
     color: colors.white,
     fontWeight: '600',
     fontSize: 24
   },
-  filterBar: {
-    backgroundColor: colors.white,
-    paddingVertical: 10,
-    paddingHorizontal: 30,
-    margin: 15,
-    borderRadius: 25,
-    minHeight: 50
+  searchView: {
+    marginHorizontal: 20,
+    borderRadius: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 15,
+    paddingVertical: 15,
+    borderWidth: 1,
+    borderColor: '#404258',
+    backgroundColor: colors.secondary
   },
-  ghostList: {
-    paddingTop: 5
+  headingIcon: {
+    color: colors.white,
+    marginRight: 10
+  },
+  searchInput: {
+    flex: 1,
+    background: 'none',
+    color: colors.white
   },
   ghostListItem: {
     flexDirection: 'row',
