@@ -1,0 +1,1 @@
+export { GhostView } from './GhostView';

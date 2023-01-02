@@ -61,6 +61,11 @@ const styles = StyleSheet.create({
     color: colors.white,
     fontSize: 14,
     marginRight: 10
+  },
+  ghostScreenName: {
+    color: colors.white,
+    fontSize: 24,
+    padding: 15
   }
 });
 

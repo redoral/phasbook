@@ -1,8 +1,10 @@
-import { View, StatusBar, Text, TextInput } from 'react-native';
-import { GhostList } from './components/ghost-list';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import styles from './styles';
-import colors from './styles/colors';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { HomeScreen } from './screens/home-screen';
+import { GhostView } from './screens/ghost-view';
+import { StackParamList } from './types';
+
+const Stack = createNativeStackNavigator<StackParamList>();
 
 /**
  * The main react component for Phasbook
@@ -10,24 +12,15 @@ import colors from './styles/colors';
  */
 const App: React.FC = () => {
   return (
-    <View style={styles.container}>
-      <StatusBar backgroundColor={colors.black} />
-      <View style={styles.header}>
-        <Text style={styles.headingText}>
-          <Icon name='book-outline' size={24} />
-          Phasbook
-        </Text>
-      </View>
-      <View style={styles.searchView}>
-        <Icon name='magnify' size={16} style={styles.headingIcon} />
-        <TextInput
-          style={styles.searchInput}
-          placeholder='Search...'
-          placeholderTextColor={colors.white}
-        />
-      </View>
-      <GhostList />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false
+        }}>
+        <Stack.Screen name='Home' component={HomeScreen} />
+        <Stack.Screen name='GhostView' component={GhostView} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 

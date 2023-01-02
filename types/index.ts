@@ -1,17 +1,43 @@
-interface GhostI {
+import type { NativeStackScreenProps } from '@react-navigation/native-stack';
+
+type Ghost = {
   name: string;
   speed: number;
   huntSanity: number;
-  evidence: EvidenceI[];
-}
+  evidence: Evidence[];
+};
 
-interface GhostRenderItemI {
-  item: GhostI;
-}
+type GhostRenderItem = {
+  item: Ghost;
+};
 
-interface EvidenceI {
+type Evidence = {
   id: number;
   name: string;
-}
+};
 
-export { GhostI, GhostRenderItemI };
+type GhostListProps = {
+  navigate: (selectedGhost: Ghost) => void;
+};
+
+type GhostListItemProps = {
+  navigate: (selectedGhost: Ghost) => void;
+  ghost: Ghost;
+};
+
+type StackParamList = {
+  Home: undefined;
+  GhostView: Ghost;
+};
+
+type NavProps = NativeStackScreenProps<StackParamList, 'GhostView'>;
+
+export {
+  Ghost,
+  GhostRenderItem,
+  Evidence,
+  GhostListProps,
+  GhostListItemProps,
+  StackParamList,
+  NavProps
+};
