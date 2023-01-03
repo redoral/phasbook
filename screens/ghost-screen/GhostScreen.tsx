@@ -4,6 +4,9 @@ import styles from '../../styles';
 
 /**
  * The screen that displays information about a specific ghost
+ * @param route - Route object from ReactNavigation
+ * @param navigation - Navigation object from ReactNavigation
+ *
  * @returns A React functional component
  */
 export const GhostScreen: React.FC<NavProps> = ({ route, navigation }: NavProps) => {

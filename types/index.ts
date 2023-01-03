@@ -1,5 +1,10 @@
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 
+type Evidence = {
+  id: number;
+  name: string;
+};
+
 type Ghost = {
   name: string;
   speed: number;
@@ -9,11 +14,6 @@ type Ghost = {
 
 type GhostRenderItem = {
   item: Ghost;
-};
-
-type Evidence = {
-  id: number;
-  name: string;
 };
 
 type GhostListProps = {

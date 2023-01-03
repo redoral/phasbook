@@ -3,11 +3,13 @@ import { GhostList } from '../../components/ghost-list';
 import { Ghost } from '../../types';
 import { useCallback } from 'react';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import styles from '../..//styles';
+import styles from '../../styles';
 import colors from '../../styles/colors';
 
 /**
  * Main home screen for the app.
+ * @param navigation - The navigation object from ReactNavigation
+ *
  * @returns A React functional component
  */
 export const HomeScreen: React.FC = ({ navigation }: any) => {
