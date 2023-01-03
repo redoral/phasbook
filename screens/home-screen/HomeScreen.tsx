@@ -9,8 +9,7 @@ import colors from '../../styles/colors';
 /**
  * Main home screen for the app.
  * @param navigation - The navigation object from ReactNavigation
- *
- * @returns A React functional component
+ * @function navigateToGhostScreen - Function used to navigate to GhostScreen using ReactNavigation
  */
 export const HomeScreen: React.FC = ({ navigation }: any) => {
   const navigateToGhostScreen = useCallback((selectedGhost: Ghost) => {

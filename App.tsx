@@ -8,7 +8,6 @@ const Stack = createNativeStackNavigator<StackParamList>();
 
 /**
  * The root component for the entire app
- * @returns a React functional component
  */
 const App: React.FC = () => {
   return (
