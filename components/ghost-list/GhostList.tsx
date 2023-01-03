@@ -6,13 +6,13 @@ import ghostsData from '../../resources/ghosts.json';
 
 /**
  * The FlastList for all of the ghosts shown in the main screen
- * @param navigate - The navigate function used to go to GhostScreen
+ * @param navigateToGhostScreen - The navigate function used to go to GhostScreen
  *
  * @returns a React functional component
  */
-export const GhostList: React.FC<GhostListProps> = ({ navigate }: GhostListProps) => {
+export const GhostList: React.FC<GhostListProps> = ({ navigateToGhostScreen }: GhostListProps) => {
   const renderItem = useCallback(({ item: data }: GhostRenderItem) => {
-    return <GhostListItem ghost={data} navigate={navigate} />;
+    return <GhostListItem ghost={data} navigateToGhostScreen={navigateToGhostScreen} />;
   }, []);
 
   return <FlatList renderItem={renderItem} data={ghostsData} />;

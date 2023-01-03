@@ -17,11 +17,11 @@ type GhostRenderItem = {
 };
 
 type GhostListProps = {
-  navigate: (selectedGhost: Ghost) => void;
+  navigateToGhostScreen: (selectedGhost: Ghost) => void;
 };
 
 type GhostListItemProps = {
-  navigate: (selectedGhost: Ghost) => void;
+  navigateToGhostScreen: (selectedGhost: Ghost) => void;
   ghost: Ghost;
 };
 

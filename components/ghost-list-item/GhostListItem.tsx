@@ -7,16 +7,18 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 /**
  * The ListRenderItem for the GhostList FlatList
  * @param ghost - The selected ghost from the Touchable
- * @param navigate - The navigate function used to go to GhostScreen
+ * @param navigateToGhostScreen - The navigate function used to go to GhostScreen
  *
  * @returns a React functional component
  */
 export const GhostListItem: React.FC<GhostListItemProps> = ({
   ghost,
-  navigate
+  navigateToGhostScreen
 }: GhostListItemProps) => {
   return (
-    <TouchableOpacity style={styles.ghostListItem} onPress={useCallback(() => navigate(ghost), [])}>
+    <TouchableOpacity
+      style={styles.ghostListItem}
+      onPress={useCallback(() => navigateToGhostScreen(ghost), [])}>
       <View>
         <Icon name='ghost' style={styles.ghostLogo} size={26} />
       </View>

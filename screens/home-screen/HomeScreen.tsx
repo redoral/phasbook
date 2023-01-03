@@ -13,7 +13,7 @@ import colors from '../../styles/colors';
  * @returns A React functional component
  */
 export const HomeScreen: React.FC = ({ navigation }: any) => {
-  const navigate = useCallback((selectedGhost: Ghost) => {
+  const navigateToGhostScreen = useCallback((selectedGhost: Ghost) => {
     navigation.navigate('GhostScreen', selectedGhost);
   }, []);
 
@@ -34,7 +34,7 @@ export const HomeScreen: React.FC = ({ navigation }: any) => {
           placeholderTextColor={colors.white}
         />
       </View>
-      <GhostList navigate={navigate} />
+      <GhostList navigateToGhostScreen={navigateToGhostScreen} />
     </View>
   );
 };
