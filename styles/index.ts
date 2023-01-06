@@ -1,6 +1,10 @@
 import { StyleSheet } from 'react-native';
 import colors from './colors';
 
+/**
+ * Main stylesheet for the entire app
+ * @todo Modularize if it gets too big
+ */
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -9,7 +13,6 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     paddingVertical: 25,
-    justifyContent: 'space-between',
     padding: 25
   },
   headingText: {
@@ -23,7 +26,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 15,
-    paddingVertical: 15,
+    paddingVertical: 10,
     borderWidth: 1,
     borderColor: '#404258',
     backgroundColor: colors.secondary
@@ -66,6 +69,11 @@ const styles = StyleSheet.create({
     color: colors.white,
     fontSize: 24,
     padding: 15
+  },
+  roundDivider: {
+    color: colors.white,
+    borderRadius: 25,
+    width: 50
   }
 });
 

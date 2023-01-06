@@ -1,77 +1,129 @@
 [
   {
     "name": "Spirit",
-    "speed": 1.6,
     "huntSanity": 50,
+    "baseSpeed": 1.6,
+    "secondarySpeed": {
+      "value": 0,
+      "description": ""
+    },
+    "keyNotes": [
+      {
+        "description": "",
+        "icon": ""
+      }
+    ],
     "evidence": [
       {
         "id": 1,
-        "name": "EMF Level 5"
+        "name": "EMF Level 5",
+        "icon": ""
       },
       {
         "id": 6,
-        "name": "Spirit Box"
+        "name": "Spirit Box",
+        "icon": ""
       },
       {
         "id": 5,
-        "name": "Ghost Writing"
+        "name": "Ghost Writing",
+        "icon": ""
       }
     ]
   },
   {
     "name": "Wraith",
-    "speed": 1.6,
     "huntSanity": 50,
+    "baseSpeed": 1.6,
+    "secondarySpeed": {
+      "value": 0,
+      "description": ""
+    },
+    "keyNotes": [
+      {
+        "description": "",
+        "icon": ""
+      }
+    ],
     "evidence": [
       {
         "id": 1,
-        "name": "EMF Level 5"
+        "name": "EMF Level 5",
+        "icon": ""
       },
       {
         "id": 6,
-        "name": "Spirit Box"
+        "name": "Spirit Box",
+        "icon": ""
       },
       {
         "id": 0,
-        "name": "D.O.T.S. Projector"
+        "name": "D.O.T.S. Projector",
+        "icon": ""
       }
     ]
   },
   {
     "name": "Phantom",
-    "speed": 1.6,
     "huntSanity": 50,
+    "baseSpeed": 1.6,
+    "secondarySpeed": {
+      "value": 0,
+      "description": ""
+    },
+    "keyNotes": [
+      {
+        "description": "",
+        "icon": ""
+      }
+    ],
     "evidence": [
       {
         "id": 6,
-        "name": "Spirit Box"
+        "name": "Spirit Box",
+        "icon": ""
       },
       {
         "id": 2,
-        "name": "Fingerprints"
+        "name": "Fingerprints",
+        "icon": ""
       },
       {
         "id": 0,
-        "name": "D.O.T.S. Projector"
+        "name": "D.O.T.S. Projector",
+        "icon": ""
       }
     ]
   },
   {
     "name": "Poltergeist",
-    "speed": 1.6,
     "huntSanity": 50,
+    "baseSpeed": 1.6,
+    "secondarySpeed": {
+      "value": 0,
+      "description": ""
+    },
+    "keyNotes": [
+      {
+        "description": "",
+        "icon": ""
+      }
+    ],
     "evidence": [
       {
         "id": 6,
-        "name": "Spirit Box"
+        "name": "Spirit Box",
+        "icon": ""
       },
       {
         "id": 2,
-        "name": "Fingerprints"
+        "name": "Fingerprints",
+        "icon": ""
       },
       {
         "id": 5,
-        "name": "Ghost Writing"
+        "name": "Ghost Writing",
+        "icon": ""
       }
     ]
   }
