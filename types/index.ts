@@ -2,9 +2,9 @@ import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 /**
  * Type for ghost evidence
- * @property id - ID for each evidence, will be used in the future
- * @property name - Name of the evidence
- * @property icon - MaterialCommunityIcon name for the evidence
+ * @member id - ID for each evidence, will be used in the future
+ * @member name - Name of the evidence
+ * @member icon - MaterialCommunityIcon name for the evidence
  */
 type Evidence = {
   id: number;
@@ -14,8 +14,8 @@ type Evidence = {
 
 /**
  * Type for key notes for each ghost
- * @property description - The description/note
- * @property icon - MaterialCommunityIcon name for the note
+ * @member description - The description/note for a specific ghost
+ * @member icon - MaterialCommunityIcon name for the note
  */
 type KeyNotes = {
   description: string;
@@ -24,8 +24,8 @@ type KeyNotes = {
 
 /**
  * Type for the secondary speed property of the ghost
- * @property value - The speed value of the ghost
- * @property description - Description of how the ghost achieves this speed
+ * @member value - The speed value of the ghost
+ * @member description - Description of how the ghost achieves this speed
  */
 type SecondarySpeed = {
   value: number;
@@ -33,13 +33,13 @@ type SecondarySpeed = {
 };
 
 /**
- * The type for each ghost
- * @property name - Name of the ghost
- * @property huntSanity - Sanity value of when the ghost starts to hunt
- * @property baseSpeed - Base speed of the ghost
- * @property secondarySpeed - Speed of the ghost when hunting or near a player
- * @property keyNotes - Unique notes/descriptions for each ghost
- * @property evidence - The array of evidences that a ghost can have
+ * Type for each ghost
+ * @member name - Name of the ghost
+ * @member huntSanity - Sanity value of when the ghost starts to hunt
+ * @member baseSpeed - Base speed of the ghost
+ * @member secondarySpeed - Speed of the ghost when hunting or near a player
+ * @member keyNotes - Unique notes/descriptions for each ghost
+ * @member evidence - The array of evidences that a ghost can have
  */
 type Ghost = {
   name: string;
@@ -51,25 +51,25 @@ type Ghost = {
 };
 
 /**
- * The type for the render item used in the GhostList FlatList
- * @property item - The ghost object passed to the GhostListItem component
+ * Type for the render item used in the GhostList FlatList
+ * @member item - The ghost object passed to the GhostListItem component
  */
 type GhostRenderItem = {
   item: Ghost;
 };
 
 /**
- * The type for the react props for the GhostList component
- * @property navigateToGhostScreen - The function used to navigate to GhostScreen with ReactNavigation
+ * Type for the react props for the GhostList component
+ * @member navigateToGhostScreen - The function used to navigate to GhostScreen with ReactNavigation
  */
 type GhostListProps = {
   navigateToGhostScreen: (selectedGhost: Ghost) => void;
 };
 
 /**
- * The type for the the react props for the GhostListItem component
- * @property navigateToGhostScreen - The function used to navigate to GhostScreen with ReactNavigation
- * @property ghost - The ghost object passed from the GhostRenderItem
+ * Type for the the react props for the GhostListItem component
+ * @member navigateToGhostScreen - The function used to navigate to GhostScreen with ReactNavigation
+ * @member ghost - The ghost object passed from the GhostRenderItem
  */
 type GhostListItemProps = {
   navigateToGhostScreen: (selectedGhost: Ghost) => void;
@@ -77,9 +77,9 @@ type GhostListItemProps = {
 };
 
 /**
- * The type for the navigation stack for ReactNavigation
- * @property Home - The home screen
- * @property GhostScreen - The Ghost Screen
+ * Type for the navigation stack for ReactNavigation
+ * @member Home - The home screen
+ * @member GhostScreen - The Ghost Screen
  */
 type StackParamList = {
   Home: undefined;
@@ -87,7 +87,7 @@ type StackParamList = {
 };
 
 /**
- * The type for ReactNavigation props used in the Home and Ghost screens
+ * Type for ReactNavigation props used in the Home and Ghost screens
  */
 type NavProps = NativeStackScreenProps<StackParamList, 'GhostScreen'>;
 

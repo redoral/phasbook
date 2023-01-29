@@ -65,6 +65,9 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginRight: 10
   },
+  ghostInfoContainer: {
+    justifyContent: 'center'
+  },
   ghostScreenName: {
     color: colors.white,
     fontSize: 24,
