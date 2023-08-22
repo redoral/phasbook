@@ -12,6 +12,8 @@ const styles = StyleSheet.create({
   },
   header: {
     flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
     paddingVertical: 25,
     padding: 25
   },

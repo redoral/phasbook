@@ -1,8 +1,8 @@
 import { useCallback } from 'react';
 import { FlatList } from 'react-native';
-import { GhostListProps, GhostRenderItem } from '../../types';
+import { Ghost, GhostListProps, GhostRenderItem } from '../../types';
 import { GhostListItem } from '../ghost-list-item';
-import ghostsData from '../../resources/ghosts.json';
+import ghosts from '../../resources/ghosts.json';
 
 /**
  * The FlastList for all of the ghosts shown in the main screen
@@ -14,7 +14,7 @@ export const GhostList: React.FC<GhostListProps> = ({ navigateToGhostScreen }: G
     return <GhostListItem ghost={data} navigateToGhostScreen={navigateToGhostScreen} />;
   }, []);
 
-  return <FlatList renderItem={renderItem} data={ghostsData} />;
+  return <FlatList renderItem={renderItem} data={ghosts as Array<Ghost>} />;
 };
 
 export default GhostList;

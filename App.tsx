@@ -14,7 +14,8 @@ const App: React.FC = () => {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
-          headerShown: false
+          headerShown: false,
+          animation: 'slide_from_right'
         }}>
         <Stack.Screen name='Home' component={HomeScreen} />
         <Stack.Screen name='GhostScreen' component={GhostScreen} />

@@ -23,7 +23,7 @@ export const GhostScreen: React.FC<NavProps> = ({ route, navigation }: NavProps)
         />
       </View>
       <View style={styles.ghostInfoContainer}>
-        <Icon name='ghost' size={24} />
+        <Icon name='ghost' size={24} style={styles.ghostLogo} />
         <Text style={styles.headingText}>{route.params.name}</Text>
         <View style={styles.roundDivider}></View>
       </View>

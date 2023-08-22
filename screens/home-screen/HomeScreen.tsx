@@ -1,4 +1,4 @@
-import { View, StatusBar, Text, TextInput } from 'react-native';
+import { View, StatusBar, Text, TextInput, Button } from 'react-native';
 import { GhostList } from '../../components/ghost-list';
 import { Ghost } from '../../types';
 import { useCallback } from 'react';
@@ -24,6 +24,10 @@ export const HomeScreen: React.FC = ({ navigation }: any) => {
           <Icon name='book-outline' size={24} />
           Phasbook
         </Text>
+        <View style={{ display: 'flex', flexDirection: 'row' }}>
+          <Icon name='filter-variant' color={'#fff'} size={24} style={{ marginRight: 16 }} />
+          <Icon name='sort' color={'#fff'} size={24} />
+        </View>
       </View>
       <View style={styles.searchView}>
         <Icon name='magnify' size={16} style={styles.headingIcon} />

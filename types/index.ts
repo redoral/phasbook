@@ -42,12 +42,14 @@ type SecondarySpeed = {
  * @member evidence - The array of evidences that a ghost can have
  */
 type Ghost = {
+  id: string;
   name: string;
-  huntSanity: number;
-  baseSpeed: number;
-  secondarySpeed: SecondarySpeed;
-  keyNotes: KeyNotes[];
-  evidence: Evidence[];
+  evidences: Array<string>;
+  fastSpeed?: { value: number; condition: string };
+  slowSpeed?: { value: number; condition: string };
+  hunt?: number;
+  url: string;
+  about: string;
 };
 
 /**
