@@ -1,7 +1,7 @@
 import { View, StatusBar, Text, TextInput, Button } from 'react-native';
 import { GhostList } from '../../components/ghost-list';
 import { Ghost } from '../../types';
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import styles from '../../styles';
 import colors from '../../styles/colors';
@@ -12,6 +12,8 @@ import colors from '../../styles/colors';
  * @function navigateToGhostScreen - Function used to navigate to GhostScreen using ReactNavigation
  */
 export const HomeScreen: React.FC = ({ navigation }: any) => {
+  const [searchQuery, setSearchQuery] = useState('');
+
   const navigateToGhostScreen = useCallback((selectedGhost: Ghost) => {
     navigation.navigate('GhostScreen', selectedGhost);
   }, []);
@@ -35,9 +37,11 @@ export const HomeScreen: React.FC = ({ navigation }: any) => {
           style={styles.searchInput}
           placeholder='Search...'
           placeholderTextColor={colors.white}
+          value={searchQuery}
+          onChangeText={setSearchQuery}
         />
       </View>
-      <GhostList navigateToGhostScreen={navigateToGhostScreen} />
+      <GhostList searchQuery={searchQuery} navigateToGhostScreen={navigateToGhostScreen} />
     </View>
   );
 };

@@ -2,14 +2,14 @@
   {
     "id": "banshee",
     "name": "Banshee",
-    "evidences": ["fingerprints", "orbs", "dots"],
+    "evidences": ["Ultraviolet", "Ghost Orb", "DOTS"],
     "url": "https://phasmophobia.fandom.com/wiki/Banshee",
     "about": "Targets one specific player until they are killed, ignoring others. Its [hunt](https://phasmophobia.fandom.com/wiki/Hunt) threshold is based on its target's sanity. A distinctive screech can be heard when using the [Parabolic Microphone](https://phasmophobia.fandom.com/wiki/Parabolic_Microphone)."
   },
   {
     "id": "demon",
     "name": "Demon",
-    "evidences": ["fingerprints", "writing", "freezing"],
+    "evidences": ["Ultraviolet", "Writing", "Freezing"],
     "hunt": 70,
     "url": "https://phasmophobia.fandom.com/wiki/Demon",
     "about": "Has a rare chance to [hunt](https://phasmophobia.fandom.com/wiki/Hunt) at any time, regardless of the average sanity. There is less time between hunts **(20s)**. [Smudging](https://phasmophobia.fandom.com/wiki/Smudge_Sticks) will prevent hunts for less time **(60s)**. [Crucifixes](https://phasmophobia.fandom.com/wiki/Crucifix) have an increased effective range."
@@ -17,7 +17,7 @@
   {
     "id": "deogen",
     "name": "Deogen",
-    "evidences": ["box", "writing", "dots"],
+    "evidences": ["Spirit Box", "Writing", "DOTS"],
     "hunt": 40,
     "fastSpeed": { "value": 3.0, "condition": "when far away from player" },
     "slowSpeed": { "value": 0.4, "condition": "when close to player" },
@@ -27,31 +27,31 @@
   {
     "id": "goryo",
     "name": "Goryo",
-    "evidences": ["emf", "fingerprints", "dots"],
+    "evidences": ["EMF", "Ultraviolet", "DOTS"],
     "url": "https://phasmophobia.fandom.com/wiki/Goryo",
     "about": "Appears in [D.O.T.S.](https://phasmophobia.fandom.com/wiki/D.O.T.S_Projector_(Evidence)) only when viewed through a video camera and no players are in the same room as it. Can not change its favorite room or roam long distances."
   },
   {
     "id": "hantu",
     "name": "Hantu",
-    "evidences": ["fingerprints", "orbs", "freezing"],
+    "evidences": ["Ultraviolet", "Ghost Orb", "Freezing"],
     "fastSpeed": { "value": 2.7, "condition": "in cold areas" },
     "slowSpeed": { "value": 1.4, "condition": "in warm area" },
     "url": "https://phasmophobia.fandom.com/wiki/Hantu",
-    "about": "Increased speed in colder areas during [hunts](https://phasmophobia.fandom.com/wiki/Hunt). Occasionally emits frosty breath in its favorite room, and can appear in any room during a hunt. Moves slower in warmer areas during hunts. Twice as likely to turn off the [fuse box](https://phasmophobia.fandom.com/wiki/Fuse_Box)."
+    "about": "Increased speed in colder areas during [hunts](https://phasmophobia.fandom.com/wiki/Hunt). Occasionally emits frosty breath in its favorite room, and can appear in any room during a hunt. Moves slower in warmer areas during hunts. Twice as likely to turn off the [fuse Spirit Box](https://phasmophobia.fandom.com/wiki/Fuse_Box)."
   },
   {
     "id": "jinn",
     "name": "Jinn",
-    "evidences": ["emf", "freezing", "fingerprints"],
+    "evidences": ["EMF", "Freezing", "Ultraviolet"],
     "fastSpeed": { "value": 2.5, "condition": "if the player is far away and the generator is on" },
     "url": "https://phasmophobia.fandom.com/wiki/Jinn",
-    "about": "During a hunt, it has a higher speed if a target it can see is far away **(2.5m/s)**. Its ability will deduct nearby players' sanity **(25%)**. Turning off the [fuse box](https://phasmophobia.fandom.com/wiki/Fuse_Box) will prevent it from using its ability."
+    "about": "During a hunt, it has a higher speed if a target it can see is far away **(2.5m/s)**. Its ability will deduct nearby players' sanity **(25%)**. Turning off the [fuse Spirit Box](https://phasmophobia.fandom.com/wiki/Fuse_Box) will prevent it from using its ability."
   },
   {
     "id": "mare",
     "name": "Mare",
-    "evidences": ["box", "orbs", "writing"],
+    "evidences": ["Spirit Box", "Ghost Orb", "Writing"],
     "hunt": 60,
     "url": "https://phasmophobia.fandom.com/wiki/Mare",
     "about": "[Hunts](https://phasmophobia.fandom.com/wiki/Hunt) at higher sanity thresholds in the dark **(60%)**, and lower sanity thresholds in the light **(40%)**. Turns off lights and breaks lightbulbs more often. Remains in unlit rooms more often."
@@ -59,15 +59,15 @@
   {
     "id": "mimic",
     "name": "The Mimic",
-    "evidences": ["box", "fingerprints", "freezing"],
-    "falseEvidences": ["orbs"],
+    "evidences": ["Spirit Box", "Ultraviolet", "Freezing"],
+    "falseEvidences": ["Ghost Orb"],
     "url": "https://phasmophobia.fandom.com/wiki/The_Mimic",
-    "about": "Mimics other ghost types for a brief period of time before mimicking to a new ghost type. Includes [Ghost Orbs](https://phasmophobia.fandom.com/wiki/Ghost_Orb) as fourth false evidence. Can mimic evidence properties if the ghost it is mimicking shares the evidence. For example, the [Obake](https://phasmophobia.fandom.com/wiki/Obake)'s fingerprints."
+    "about": "Mimics other ghost types for a brief period of time before mimicking to a new ghost type. Includes [Ghost Ghost Orb](https://phasmophobia.fandom.com/wiki/Ghost_Orb) as fourth false evidence. Can mimic evidence properties if the ghost it is mimicking shares the evidence. For example, the [Obake](https://phasmophobia.fandom.com/wiki/Obake)'s Ultraviolet."
   },
   {
     "id": "moroi",
     "name": "Moroi",
-    "evidences": ["box", "writing", "freezing"],
+    "evidences": ["Spirit Box", "Writing", "Freezing"],
     "fastSpeed": { "value": 3.9, "condition": "(up to) on line of sight" },
     "slowSpeed": { "value": 2.5, "condition": "depending on player sanity" },
     "url": "https://phasmophobia.fandom.com/wiki/Moroi",
@@ -76,28 +76,28 @@
   {
     "id": "myling",
     "name": "Myling",
-    "evidences": ["emf", "fingerprints", "writing"],
+    "evidences": ["EMF", "Ultraviolet", "Writing"],
     "url": "https://phasmophobia.fandom.com/wiki/Myling",
     "about": "Has quieter footsteps and vocalizations during [hunts](https://phasmophobia.fandom.com/wiki/Hunt) that can only be heard when closer to the ghost **(12m)**. When using a [Parabolic Microphone](https://phasmophobia.fandom.com/wiki/Parabolic_Microphone), it produces paranormal sounds more frequently."
   },
   {
     "id": "obake",
     "name": "Obake",
-    "evidences": ["emf", "fingerprints", "orbs"],
+    "evidences": ["EMF", "Ultraviolet", "Ghost Orb"],
     "url": "https://phasmophobia.fandom.com/wiki/Obake",
-    "about": "[Fingerprints](https://phasmophobia.fandom.com/wiki/Fingerprints) disappear faster than other ghost types. Does not always leave fingerprints **(75%)**, and can leave unique fingerprints **(~17%)**. It can use its ability to half the lifespan of fingerprints on the map. During hunts, it has a 6.66% chance each time it flickers to shapeshift into a different ghost model for the duration of that flicker, but it is guaranteed to happen at least once per hunt."
+    "about": "[Fingerprints](https://phasmophobia.fandom.com/wiki/Fingerprints) disappear faster than other ghost types. Does not always leave Ultraviolet **(75%)**, and can leave unique Ultraviolet **(~17%)**. It can use its ability to half the lifespan of Ultraviolet on the map. During hunts, it has a 6.66% chance each time it flickers to shapeshift into a different ghost model for the duration of that flicker, but it is guaranteed to happen at least once per hunt."
   },
   {
     "id": "oni",
     "name": "Oni",
-    "evidences": ["emf", "freezing", "dots"],
+    "evidences": ["EMF", "Freezing", "DOTS"],
     "url": "https://phasmophobia.fandom.com/wiki/Oni",
     "about": "More active when people are nearby. Cannot produce “air ball” [Ghost Events](https://phasmophobia.fandom.com/wiki/Ghost_Event). Stays visible for longer during [hunts](https://phasmophobia.fandom.com/wiki/Hunt)."
   },
   {
     "id": "onryo",
     "name": "Onryo",
-    "evidences": ["box", "orbs", "freezing"],
+    "evidences": ["Spirit Box", "Ghost Orb", "Freezing"],
     "hunt": 60,
     "url": "https://phasmophobia.fandom.com/wiki/Onryo",
     "about": "Chance to hunt at any sanity when blowing out flames **(50%, +25% / dead player)**. Blows out flames more often than other ghost types. Presence of flames prevents the ghost from [hunting](https://phasmophobia.fandom.com/wiki/Hunt) naturally **(4m)**."
@@ -105,21 +105,21 @@
   {
     "id": "phantom",
     "name": "Phantom",
-    "evidences": ["box", "fingerprints", "dots"],
+    "evidences": ["Spirit Box", "Ultraviolet", "DOTS"],
     "url": "https://phasmophobia.fandom.com/wiki/Phantom",
     "about": "Additional sanity drain from players within its line-of-sight during manifestations. Can roam towards random players. Taking a picture of the Phantom renders it temporarily invisible during [Ghost Events](https://phasmophobia.fandom.com/wiki/Ghost_Event). While [hunting](https://phasmophobia.fandom.com/wiki/Hunt), the ghost will be invisible in photos and will be visible for less time."
   },
   {
     "id": "poltergeist",
     "name": "Poltergeist",
-    "evidences": ["box", "writing", "fingerprints"],
+    "evidences": ["Spirit Box", "Writing", "Ultraviolet"],
     "url": "https://phasmophobia.fandom.com/wiki/Poltergeist",
     "about": "Its ability can throw multiple objects at once with great force. Witnessing its ability will drain the player's sanity, depending on the amount of objects thrown. During a [hunt](https://phasmophobia.fandom.com/wiki/Hunt), it opens more doors and throws everything it comes across. Ineffective in empty rooms with no objects to throw."
   },
   {
     "id": "raiju",
     "name": "Raiju",
-    "evidences": ["emf", "orbs", "dots"],
+    "evidences": ["EMF", "Ghost Orb", "DOTS"],
     "hunt": 65,
     "fastSpeed": { "value": "2.5", "condition": "around electronics" },
     "url": "https://phasmophobia.fandom.com/wiki/Raiju",
@@ -128,7 +128,7 @@
   {
     "id": "revenant",
     "name": "Revenant",
-    "evidences": ["orbs", "writing", "freezing"],
+    "evidences": ["Ghost Orb", "Writing", "Freezing"],
     "fastSpeed": { "value": 3.0, "condition": "on line of sight" },
     "slowSpeed": { "value": 1.1, "condition": "if player is hiding" },
     "url": "https://phasmophobia.fandom.com/wiki/Revenant",
@@ -137,7 +137,7 @@
   {
     "id": "shade",
     "name": "Shade",
-    "evidences": ["emf", "writing", "freezing"],
+    "evidences": ["EMF", "Writing", "Freezing"],
     "hunt": 35,
     "url": "https://phasmophobia.fandom.com/wiki/Shade",
     "about": "Harder to find due to it being less active. Prefers hissing and shadowy form [Ghost Events](https://phasmophobia.fandom.com/wiki/Ghost_Event). Generally unwilling to manifest in presence of players."
@@ -145,14 +145,14 @@
   {
     "id": "spirit",
     "name": "Spirit",
-    "evidences": ["emf", "box", "writing"],
+    "evidences": ["EMF", "Spirit Box", "Writing"],
     "url": "https://phasmophobia.fandom.com/wiki/Spirit",
     "about": "No special behavior, other than using [Smudge Sticks](https://phasmophobia.fandom.com/wiki/Smudge_Sticks) while nearby it prevents the ghost from [hunting](https://phasmophobia.fandom.com/wiki/Hunt) for much longer **(180s)**."
   },
   {
     "id": "thaye",
     "name": "Thaye",
-    "evidences": ["orbs", "writing", "dots"],
+    "evidences": ["Ghost Orb", "Writing", "DOTS"],
     "fastSpeed": { "value": 2.75, "condition": "on start" },
     "slowSpeed": { "value": 1, "condition": "(slowest) as time goes by in one area" },
     "hunt": 75,
@@ -162,7 +162,7 @@
   {
     "id": "twins",
     "name": "The Twins",
-    "evidences": ["emf", "box", "freezing"],
+    "evidences": ["EMF", "Spirit Box", "Freezing"],
     "fastSpeed": { "value": 1.76, "condition": "for the main twin" },
     "slowSpeed": { "value": 1.44, "condition": "for the slower twin" },
     "url": "https://phasmophobia.fandom.com/wiki/The_Twins",
@@ -171,14 +171,14 @@
   {
     "id": "wraith",
     "name": "Wraith",
-    "evidences": ["emf", "box", "dots"],
+    "evidences": ["EMF", "Spirit Box", "DOTS"],
     "url": "https://phasmophobia.fandom.com/wiki/Wraith",
     "about": "Can teleport to players randomly when not hunting. Doesn't step in [salt](https://phasmophobia.fandom.com/wiki/Salt_Shaker), and therefore cannot leave UV [Footprints](https://phasmophobia.fandom.com/wiki/Footprints)."
   },
   {
     "id": "yokai",
     "name": "Yokai",
-    "evidences": ["box", "orbs", "dots"],
+    "evidences": ["Spirit Box", "Ghost Orb", "DOTS"],
     "hunt": 80,
     "url": "https://phasmophobia.fandom.com/wiki/Yokai",
     "about": "When at least one player talks within a certain range of it, its [hunt](https://phasmophobia.fandom.com/wiki/Hunt) sanity threshold is increased **(80%)**. During hunts, it can only hear or sense electronics that are very close to it **(2m)**."
@@ -186,7 +186,7 @@
   {
     "id": "yurei",
     "name": "Yurei",
-    "evidences": ["orbs", "freezing", "dots"],
+    "evidences": ["Ghost Orb", "Freezing", "DOTS"],
     "url": "https://phasmophobia.fandom.com/wiki/Yurei",
     "about": "May randomly shut a door and deduct nearby players' sanity. Will be temporarily confined to its room after [Smudging](https://phasmophobia.fandom.com/wiki/Smudge_Sticks). If a ghost shuts an exit door fully without a manifestation, it is definitively a Yurei."
   }

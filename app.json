@@ -5,26 +5,32 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "backgroundColor": "#121212",
+
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#121212"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
+      "backgroundColor": "#121212",
       "supportsTablet": true
     },
     "android": {
+      "backgroundColor": "#121212",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "backgroundColor": "#121212"
       }
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#121212",
+      "translucent": false
     },
     "web": {
       "favicon": "./assets/favicon.png"

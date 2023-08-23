@@ -65,6 +65,7 @@ type GhostRenderItem = {
  * @member navigateToGhostScreen - The function used to navigate to GhostScreen with ReactNavigation
  */
 type GhostListProps = {
+  searchQuery: string;
   navigateToGhostScreen: (selectedGhost: Ghost) => void;
 };
 
