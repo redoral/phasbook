@@ -30,20 +30,23 @@ const ghostScreenStyles = StyleSheet.create({
     backgroundColor: colors.secondary,
     borderRadius: 5
   },
-  speedWrapper: {
+  infoIconsdWrapper: {
     flex: 1,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center'
   },
-  speedIcon: {
+  infoIcon: {
     color: colors.white
   },
-  speedValue: {
-    paddingVertical: 4,
-    color: '#cfcfcf',
-    marginHorizontal: 12,
+  infoIconValue: {
+    paddingTop: 4,
+    color: '#fff',
     fontSize: 12
+  },
+  infoIconLabel: {
+    color: '#cfcfcf',
+    fontSize: 10
   }
 });
 

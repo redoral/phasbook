@@ -1,9 +1,8 @@
-import { ScrollView, View, Text } from 'react-native';
-import { useCallback } from 'react';
+import { ScrollView, View, Text, TouchableOpacity } from 'react-native';
 import { NavProps } from '../../types';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import styles from '../../styles';
-import ghostScreenStyles from './GhostScreenStyles';
+import ghostScreenStyles from './ghostScreenStyles';
 import colors from '../../styles/colors';
 
 /**
@@ -26,6 +25,8 @@ export const GhostScreen: React.FC<NavProps> = ({ route, navigation }: NavProps)
         return 'radio-handheld';
       case 'EMF':
         return 'car-light-alert';
+      case 'Writing':
+        return 'book-open';
       default:
         return 'head-question-outline';
     }
@@ -34,14 +35,16 @@ export const GhostScreen: React.FC<NavProps> = ({ route, navigation }: NavProps)
   return (
     <ScrollView style={styles.container}>
       <View style={styles.header}>
-        <Icon
-          name='arrow-left'
-          onPress={useCallback(navigation.goBack, [])}
-          size={24}
-          style={{ marginRight: 15, marginTop: 5 }}
-          color={colors.white}
-        />
+        <TouchableOpacity onPress={() => navigation.goBack()}>
+          <Icon
+            name='arrow-left'
+            size={24}
+            style={{ marginRight: 15, marginTop: 5 }}
+            color={colors.white}
+          />
+        </TouchableOpacity>
       </View>
+
       <View style={ghostScreenStyles.container}>
         <Icon name='ghost' size={24} style={ghostScreenStyles.ghostLogo} />
         <Text style={styles.headingText}>{route.params.name}</Text>
@@ -50,29 +53,42 @@ export const GhostScreen: React.FC<NavProps> = ({ route, navigation }: NavProps)
         {/** EVIDENCE */}
         <View style={ghostScreenStyles.speedContainer}>
           {route.params.evidences.map((evidence) => (
-            <View style={ghostScreenStyles.speedWrapper} key={evidence}>
-              <Icon style={ghostScreenStyles.speedIcon} name={evidenceIcon(evidence)} size={24} />
-              <Text style={ghostScreenStyles.speedValue}>{evidence}</Text>
+            <View style={ghostScreenStyles.infoIconsdWrapper} key={evidence}>
+              <Icon style={ghostScreenStyles.infoIcon} name={evidenceIcon(evidence)} size={24} />
+              <Text style={ghostScreenStyles.infoIconValue}>{evidence}</Text>
             </View>
           ))}
         </View>
         {/** SPEED */}
         <View style={ghostScreenStyles.speedContainer}>
-          <View style={ghostScreenStyles.speedWrapper}>
-            <Icon style={ghostScreenStyles.speedIcon} name='walk' size={24} />
-            <Text style={ghostScreenStyles.speedValue}>
-              {route.params.slowSpeed?.value ?? 1.6}m/s
+          <View style={ghostScreenStyles.infoIconsdWrapper}>
+            <Icon style={ghostScreenStyles.infoIcon} name='walk' size={24} />
+            <Text style={ghostScreenStyles.infoIconValue}>
+              {route.params.slowSpeed?.value ?? 1.7}m/s
             </Text>
+            <Text style={ghostScreenStyles.infoIconLabel}>Slowest</Text>
           </View>
-          <View style={ghostScreenStyles.speedWrapper}>
-            <Icon style={ghostScreenStyles.speedIcon} name='run-fast' size={24} />
-            <Text style={ghostScreenStyles.speedValue}>
-              {route.params.fastSpeed?.value ?? 1.6} m/s
+          <View style={ghostScreenStyles.infoIconsdWrapper}>
+            <Icon style={ghostScreenStyles.infoIcon} name='run-fast' size={24} />
+            <Text style={ghostScreenStyles.infoIconValue}>
+              {route.params.fastSpeed?.value ?? 1.7} m/s
             </Text>
+            <Text style={ghostScreenStyles.infoIconLabel}>Fastest</Text>
           </View>
-          <View style={ghostScreenStyles.speedWrapper}>
-            <Icon style={ghostScreenStyles.speedIcon} name='eye' size={24} />
-            <Text style={ghostScreenStyles.speedValue}>LoS</Text>
+          <View style={ghostScreenStyles.infoIconsdWrapper}>
+            {route.params.noLos ? (
+              <>
+                <Icon style={ghostScreenStyles.infoIcon} name='eye-off' size={24} />
+                <Text style={ghostScreenStyles.infoIconValue}>No LoS</Text>
+                <Text style={ghostScreenStyles.infoIconLabel}>Speedup</Text>
+              </>
+            ) : (
+              <>
+                <Icon style={ghostScreenStyles.infoIcon} name='eye' size={24} />
+                <Text style={ghostScreenStyles.infoIconValue}>LoS</Text>
+                <Text style={ghostScreenStyles.infoIconLabel}>Speedup</Text>
+              </>
+            )}
           </View>
         </View>
       </View>

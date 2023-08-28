@@ -11,18 +11,30 @@ import ghosts from '../../resources/ghosts.json';
  */
 export const GhostList: React.FC<GhostListProps> = ({
   navigateToGhostScreen,
-  searchQuery
+  searchQuery,
+  speedFilters
 }: GhostListProps) => {
   const renderItem = useCallback(({ item: data }: GhostRenderItem) => {
     return <GhostListItem ghost={data} navigateToGhostScreen={navigateToGhostScreen} />;
   }, []);
 
+  const setFilters = (ghost: any) => {
+    if (speedFilters.normal && ghost.slowSpeed === undefined && ghost.fastSpeed === undefined)
+      return true;
+    if (speedFilters.fast && ghost.fastSpeed !== undefined) return true;
+    if (speedFilters.slow && ghost.slowSpeed !== undefined) return true;
+    if (speedFilters.los && ghost.noLos) return true;
+
+    return false;
+  };
+
   return (
     <FlatList
       renderItem={renderItem}
       data={
-        ghosts.filter((ghost) =>
-          ghost.name.toLowerCase().includes(searchQuery.toLowerCase())
+        ghosts.filter(
+          (ghost) =>
+            setFilters(ghost) && ghost.name.toLowerCase().includes(searchQuery.toLowerCase())
         ) as Array<Ghost>
       }
     />

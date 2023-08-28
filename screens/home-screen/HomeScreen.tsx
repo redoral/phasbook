@@ -1,10 +1,11 @@
-import { View, StatusBar, Text, TextInput, Button } from 'react-native';
+import { View, StatusBar, Text, TextInput, TouchableOpacity } from 'react-native';
 import { GhostList } from '../../components/ghost-list';
 import { Ghost } from '../../types';
 import { useCallback, useState } from 'react';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import styles from '../../styles';
 import colors from '../../styles/colors';
+import FilterModal from '../../components/filter-modal/FilterModal';
 
 /**
  * Main home screen for the app.
@@ -13,6 +14,14 @@ import colors from '../../styles/colors';
  */
 export const HomeScreen: React.FC = ({ navigation }: any) => {
   const [searchQuery, setSearchQuery] = useState('');
+  const [sortModalIsOpen, setSortModalIsOpen] = useState(true);
+  const [speedFilters, setSpeedFilters] = useState({
+    all: true,
+    fast: true,
+    slow: true,
+    normal: true,
+    los: true
+  });
 
   const navigateToGhostScreen = useCallback((selectedGhost: Ghost) => {
     navigation.navigate('GhostScreen', selectedGhost);
@@ -27,8 +36,12 @@ export const HomeScreen: React.FC = ({ navigation }: any) => {
           Phasbook
         </Text>
         <View style={{ display: 'flex', flexDirection: 'row' }}>
-          <Icon name='filter-variant' color={'#fff'} size={24} style={{ marginRight: 16 }} />
-          <Icon name='sort' color={'#fff'} size={24} />
+          <TouchableOpacity onPress={() => setSortModalIsOpen(true)}>
+            <Icon name='filter-variant' color={'#fff'} size={24} style={{ marginRight: 16 }} />
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Icon name='sort' color={'#fff'} size={24} />
+          </TouchableOpacity>
         </View>
       </View>
       <View style={styles.searchView}>
@@ -41,7 +54,17 @@ export const HomeScreen: React.FC = ({ navigation }: any) => {
           onChangeText={setSearchQuery}
         />
       </View>
-      <GhostList searchQuery={searchQuery} navigateToGhostScreen={navigateToGhostScreen} />
+      <GhostList
+        speedFilters={speedFilters}
+        searchQuery={searchQuery}
+        navigateToGhostScreen={navigateToGhostScreen}
+      />
+      <FilterModal
+        speedFilters={speedFilters}
+        setSpeedFilters={setSpeedFilters}
+        isOpen={sortModalIsOpen}
+        setIsOpen={setSortModalIsOpen}
+      />
     </View>
   );
 };

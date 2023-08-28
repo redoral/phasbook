@@ -10,7 +10,7 @@
     "id": "demon",
     "name": "Demon",
     "evidences": ["Ultraviolet", "Writing", "Freezing"],
-    "hunt": 70,
+    "hunt": 100,
     "url": "https://phasmophobia.fandom.com/wiki/Demon",
     "about": "Has a rare chance to [hunt](https://phasmophobia.fandom.com/wiki/Hunt) at any time, regardless of the average sanity. There is less time between hunts **(20s)**. [Smudging](https://phasmophobia.fandom.com/wiki/Smudge_Sticks) will prevent hunts for less time **(60s)**. [Crucifixes](https://phasmophobia.fandom.com/wiki/Crucifix) have an increased effective range."
   },
@@ -22,6 +22,7 @@
     "fastSpeed": { "value": 3.0, "condition": "when far away from player" },
     "slowSpeed": { "value": 0.4, "condition": "when close to player" },
     "url": "https://phasmophobia.fandom.com/wiki/Deogen",
+    "noLos": true,
     "about": "Always knows player locations, making hiding useless during [hunts](https://phasmophobia.fandom.com/wiki/Hunt). Greatly slows down when close to a player **(0.4m/s)**. Kiting this ghost is the best method to survive a hunt. Can produce a unique [Spirit Box](https://phasmophobia.fandom.com/wiki/Spirit_Box) response."
   },
   {
@@ -38,6 +39,7 @@
     "fastSpeed": { "value": 2.7, "condition": "in cold areas" },
     "slowSpeed": { "value": 1.4, "condition": "in warm area" },
     "url": "https://phasmophobia.fandom.com/wiki/Hantu",
+    "noLos": true,
     "about": "Increased speed in colder areas during [hunts](https://phasmophobia.fandom.com/wiki/Hunt). Occasionally emits frosty breath in its favorite room, and can appear in any room during a hunt. Moves slower in warmer areas during hunts. Twice as likely to turn off the [fuse Spirit Box](https://phasmophobia.fandom.com/wiki/Fuse_Box)."
   },
   {
@@ -157,14 +159,15 @@
     "slowSpeed": { "value": 1, "condition": "(slowest) as time goes by in one area" },
     "hunt": 75,
     "url": "https://phasmophobia.fandom.com/wiki/Thaye",
+    "noLos": true,
     "about": "Becomes very active and fast **(2.75m/s)** the first time the player gets nearby. The more time players spend near it, the quieter and slower **(1m/s)** it becomes, and its [hunt](https://phasmophobia.fandom.com/wiki/Hunt) sanity threshold decreases."
   },
   {
     "id": "twins",
     "name": "The Twins",
     "evidences": ["EMF", "Spirit Box", "Freezing"],
-    "fastSpeed": { "value": 1.76, "condition": "for the main twin" },
-    "slowSpeed": { "value": 1.44, "condition": "for the slower twin" },
+    "fastSpeed": { "value": 1.9, "condition": "for the main twin" },
+    "slowSpeed": { "value": 1.5, "condition": "for the slower twin" },
     "url": "https://phasmophobia.fandom.com/wiki/The_Twins",
     "about": "It is actually one ghost, which behaves differently on a chance. Can [hunt](https://phasmophobia.fandom.com/wiki/Hunt) from and interact with things in a different place than expected. Can interact with the environment simultaneously."
   },

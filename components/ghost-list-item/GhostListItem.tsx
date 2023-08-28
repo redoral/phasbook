@@ -24,13 +24,13 @@ export const GhostListItem: React.FC<GhostListItemProps> = ({
         <Text style={styles.ghostListItemHeading}>{ghost.name}</Text>
         <View style={styles.ghostStats}>
           <Text style={styles.ghostListItemText}>
-            <Icon name='walk' size={16} /> {ghost.slowSpeed?.value ?? 1.6} m/s
+            <Icon name='walk' size={16} /> {ghost.slowSpeed?.value ?? 1.7} m/s
           </Text>
           <Text style={styles.ghostListItemText}>
-            <Icon name='run-fast' size={16} /> {ghost.fastSpeed?.value ?? 1.6} m/s
+            <Icon name='run-fast' size={16} /> {ghost.fastSpeed?.value ?? 1.7} m/s
           </Text>
           <Text style={styles.ghostListItemText}>
-            <Icon name='brain' size={16} /> {ghost.hunt ?? 75}%
+            <Icon name='brain' size={16} /> {ghost.hunt ?? 50}%
           </Text>
         </View>
       </View>

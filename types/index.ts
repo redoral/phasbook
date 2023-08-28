@@ -50,6 +50,7 @@ type Ghost = {
   hunt?: number;
   url: string;
   about: string;
+  noLos?: boolean;
 };
 
 /**
@@ -65,6 +66,7 @@ type GhostRenderItem = {
  * @member navigateToGhostScreen - The function used to navigate to GhostScreen with ReactNavigation
  */
 type GhostListProps = {
+  speedFilters: any;
   searchQuery: string;
   navigateToGhostScreen: (selectedGhost: Ghost) => void;
 };
