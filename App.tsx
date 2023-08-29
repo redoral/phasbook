@@ -1,7 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { HomeScreen } from './screens/home-screen';
-import { GhostScreen } from './screens/ghost-screen';
+import { HomeScreen } from './screens/HomeScreen';
+import { GhostScreen } from './screens/GhostScreen';
 import { StackParamList } from './types';
 
 const Stack = createNativeStackNavigator<StackParamList>();

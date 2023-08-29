@@ -1,9 +1,7 @@
-import { ScrollView, View, Text, TouchableOpacity } from 'react-native';
-import { NavProps } from '../../types';
+import { ScrollView, View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { NavProps } from '../types';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import styles from '../../styles';
-import ghostScreenStyles from './ghostScreenStyles';
-import colors from '../../styles/colors';
+import colors from '../styles/colors';
 
 /**
  * The screen that displays information about a specific ghost
@@ -33,8 +31,8 @@ export const GhostScreen: React.FC<NavProps> = ({ route, navigation }: NavProps)
   }
 
   return (
-    <ScrollView style={styles.container}>
-      <View style={styles.header}>
+    <ScrollView contentContainerStyle={ghostScreenStyles.container}>
+      <View style={ghostScreenStyles.header}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <Icon
             name='arrow-left'
@@ -47,7 +45,7 @@ export const GhostScreen: React.FC<NavProps> = ({ route, navigation }: NavProps)
 
       <View style={ghostScreenStyles.container}>
         <Icon name='ghost' size={24} style={ghostScreenStyles.ghostLogo} />
-        <Text style={styles.headingText}>{route.params.name}</Text>
+        <Text style={ghostScreenStyles.headingText}>{route.params.name}</Text>
         <View style={ghostScreenStyles.roundDivider}></View>
         <Text style={ghostScreenStyles.aboutText}>{route.params.about}</Text>
         {/** EVIDENCE */}
@@ -95,3 +93,65 @@ export const GhostScreen: React.FC<NavProps> = ({ route, navigation }: NavProps)
     </ScrollView>
   );
 };
+
+const ghostScreenStyles = StyleSheet.create({
+  container: {
+    display: 'flex',
+    paddingHorizontal: 24,
+    height: '100%',
+    backgroundColor: colors.black
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingVertical: 25,
+    padding: 25
+  },
+  headingText: {
+    color: colors.white,
+    fontWeight: '600',
+    fontSize: 24
+  },
+  ghostLogo: {
+    color: colors.white
+  },
+  roundDivider: {
+    width: 32,
+    height: 8,
+    borderRadius: 20,
+    marginVertical: 12,
+    backgroundColor: colors.white
+  },
+  aboutText: {
+    color: colors.white,
+    fontSize: 12
+  },
+  speedContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    padding: 12,
+    marginTop: 12,
+    width: '100%',
+    backgroundColor: colors.secondary,
+    borderRadius: 5
+  },
+  infoIconsdWrapper: {
+    flex: 1,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  infoIcon: {
+    color: colors.white
+  },
+  infoIconValue: {
+    paddingTop: 4,
+    color: '#fff',
+    fontSize: 12
+  },
+  infoIconLabel: {
+    color: '#cfcfcf',
+    fontSize: 10
+  }
+});

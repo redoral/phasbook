@@ -1,8 +1,8 @@
 import { useCallback } from 'react';
 import { FlatList } from 'react-native';
-import { Ghost, GhostListProps, GhostRenderItem } from '../../types';
-import { GhostListItem } from '../ghost-list-item';
-import ghosts from '../../resources/ghosts.json';
+import { Ghost, GhostListProps, GhostRenderItem } from '../types';
+import { GhostListItem } from './GhostListItem';
+import ghosts from '../resources/ghosts.json';
 
 /**
  * The FlastList for all of the ghosts shown in the main screen8888
