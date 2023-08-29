@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 import { FlatList } from 'react-native';
 import { Ghost } from '../types';
 import { GhostListItem } from './GhostListItem';
-import ghosts from '../resources/ghosts.json';
+import ghosts from '../lib/ghosts.json';
 
 /**
  * Type for the react props for the GhostList component
