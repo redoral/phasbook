@@ -1,8 +1,26 @@
 import { useCallback } from 'react';
 import { FlatList } from 'react-native';
-import { Ghost, GhostListProps, GhostRenderItem } from '../types';
+import { Ghost } from '../types';
 import { GhostListItem } from './GhostListItem';
 import ghosts from '../resources/ghosts.json';
+
+/**
+ * Type for the react props for the GhostList component
+ * @member navigateToGhostScreen - The function used to navigate to GhostScreen with ReactNavigation
+ */
+type GhostListProps = {
+  speedFilters: any;
+  searchQuery: string;
+  navigateToGhostScreen: (selectedGhost: Ghost) => void;
+};
+
+/**
+ * Type for the render item used in the GhostList FlatList
+ * @member item - The ghost object passed to the GhostListItem component
+ */
+type GhostRenderItem = {
+  item: Ghost;
+};
 
 /**
  * The FlastList for all of the ghosts shown in the main screen8888
